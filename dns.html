@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raporlar</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="CSS/mrsbelek.css">
+</head>
+<style>
+    .logo img {
+        right: 7rem;
+    }
+</style>
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">
+        <img src="mrsbeloga.jpg" alt="logo"></a>
+        <nav class="navbar">
+            
+            <a href="raporlar.html" class="active">Raporlar</a>
+            
+         </nav>
+         
+         <div class="buttons">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+         </div>
+        </header>
+         <section class="dnsd"></section>
+         <section class="dns">
+<h2>Domain Name System</h2>
+<p>
+    Türkçe karşılığı  "Alan isimlendirme sistemi" olan  Domain Name system kısaltması olan "DNS" tabiri ile daha çok kullanılıyor. DNS internetin telefon rehberidir diyebiliriz yani IP adresleri ve alan adlarının kaydının tutulduğu dev bir telefon rehberine benzetebiliriz. Bu sistem sayesinde internet sitelerini ziyaret etmek istediğimizde tarayıcımıza IP adresleri yerine anlamlı veya anlamsız ancak akılda kalıcı domainler yazarak bağlantı yapabiliyoruz. İsimlerin IP’ye dönüştürülmesi maksadıyla kullanılan ve 256 karaktere kadar da büyüyebilen bir sistemdir.
+DNS sunucuları aslında 7/24 çalışacak şekilde konfigüre edilmiş özel bilgisayarlardır. DNS’nin asıl amacı, ağ üzerinde yaşanan IP numarası ve alan adı ile ilgili sorulara cevap vermektir. Bu amaca yönelik de yaygın olarak kullanılan BIND yazılımından istifade edilir. Kullanıcı, bir siteye ulaşmak istediğinde DNS sayesinde bir sitenin, İnternetin hangi alanında bulunduğu kolay bir şekilde çözülür. Bu sayede pratik bir şekilde erişim gerçekleştirilir. sistemin pratik bir hale gelmesi için de tüm DNS sunucuları internet ağında uygun bir şekilde DNS Zone’larına konumlandırılarak dağıtılmıştır. Her biri kendi bölgesinde sürekli olarak IP adreslerini sorgulamak ve onlarla ilişkili alan adlarını eşleştirmek ve onları kayıt altında tutmak için çalışırlar. 
+
+</p>
+<ul>Web Sayfası yükleme sürecinde 4 çeşit DNS sunucusu vardır ;
+<li>DNS Çözümleyici </li>
+<li>Root Server</li>
+<li>TLD Name Server </li>
+<li>Yetkili Name Server </li>
+</ul>
+<ul><strong style="color: rgb(96, 95, 95);;">1. DNA ÇÖZÜMLEYİCİSİ</strong>DNS çözümleyici tarayıcıya yazdığımız alan adının IP adresinin sorulduğu ilk birimdir. </ul>
+    <ul><strong style="color: rgb(96, 95, 95);;">2. Root Server </strong>13 adet Root name server bulunur. Dünyayı zonlara ayırır ve bölgeler halinde kontrol ederler. DNS sisteminin en tepesinde bulunan sunuculardır. Diğer bütün DNS sunucuları, bağlı bulundukları Root DNS sunucusuna veri akışı sağlayarak hangi alan adının hangi sunucuda ve dolayısıyla hangi IP adresinde bulunduğunu bilgi olarak verirler. </ul>
+        <ul><strong style="color: rgb(96, 95, 95);;">3. TLD Name Server </strong>TLD "Top Level Domain" tabirinin kısaltmasıdır. TLD alan adlarının sonundaki uzantılara verilen isimdir. Bu uzantının çeşidine göre bütün alan adları gruplar halinde kayıt altına alınırlar. “.COM”, “.NET”, “.ORG” gibi uzantılar bir alan adının nereye bağlı olduğunun sorgulandığı ilk adımdır.</ul>
+            <ul><strong style="color: rgb(96, 95, 95);;">4. Name Server</strong>İsim sunucuları, alan adlarının bir bütün olarak hangi IP adresinde saklandığının kaydının tutulduğu asıl sunuculardır. Her alan adının bağlı bulunduğu yetkili Name Server, bir internet sitesinin alan adının barındırıldığı kuruluşa ait isim sunucusudur. Alan adı barındıran her firma bir Name Server oluşturur ve o alan adına atanan IP adreslerinin kaydını tutarak bir sorgu yapıldığında tüm DNS sistemine IP adresi bilgisini verirler. 
+                Her alan adına biri yedek olmak üzere iki adet Name Server adresi tanımlanır ve bu bilgi tüm DNS sistemine kaydedilir. Name Server adresleri şuna benzer;
+                </ul>
+                <li>ns1.hosting.com.tr</li>
+                <li>ns2.hosting.com.tr</li>
+                <h3>DNS NASIL ÇALIŞIR?</h3>
+                <p>DNS sistemi sunucu ve çözümleyici isimli iki faktör tarafından çalıştırılır. İsim sunucuları, IP adresi bilgilerini muhafaza eder. Çözümleyiciler ise, DNS isteyen ekipmanlardır. Çözümleyicilerde; DNS sunucuları ve sunucuların adresleri bulunur. Bir çözümleyici, bilgisayarın adına karşılık gelen bir IP adresini bulmak istediğinde sunucuya yönlenir. Normal şartlarda bilgisayarlar ve tarayıcılarda Cache denilen bir kayıt sistemi vardır. Bir kere ziyaret ettiğiniz bir internet sitesinin IP adresi, siteye ait bazı içerik bilgileri hafızaya kaydedilir ve tekrar sorulduğunda bu hafızadan hızlıca gösterilir. Böylece tüm DNS sistemine yeniden sorgu yapmanıza gerek kalmaz. 
+                    nternet adresleri öncelikle ülkelere göre sınıflandırılır. Ülkemizdeki İnternet sitelerinin sonundaki TR, bu sınıflandırmayı ifade eder. Her ülkenin kendine özel bir sınıflandırma sembolü vardır. Sadece Amerika Birleşik Devletleri, istisnai bir durum sergiler. Bu da DNS'in Amerika'da geliştirilmiş olmasından kaynaklanır. Sınıflandırılan İnternet siteleri, "com", "gov", "edu" gibi alt bölümlere ayrılır. Bu ifadelerin anlamlarını şu şekilde sıralayabiliriz:
+                    </p>
+                    <p>com : İngilizce "commercial" kelimesinin kısaltmasıdır. Ticari kuruluş olan İnternet sitelerini gösterir.</p>
+         
+                    <p>org : İngilizce "organization" kelimesinden gelir. Ticari niteliğe sahip olmayan kurumları temsil eder.</p>
+         <p>mil : İngilizce "military" kelimesinin kısaltılmasından türetilmiştir. Askeri kurum sitelerini gösterir. </p>
+         <p>gov : İngilizce "government" kelimesinin kısaltılmasıdır. Devlet'e bağlı olarak faaliyet gösteren İnternet sitelerinde kullanılır.</p>
+         <p>edu : İngilizce "education" kelimesinden gelir. Eğitim kuruluşlarını ifade eder.</p>
+         <p>net : "Network" kelimesinden üretilmiştir ve uluslararası faaliyet alanına sahip kurumları ifade eder.</p>
+         <p>Alan adları, belirlenen kurallar çerçevesinde verilir. Herkes istediği alan adını kullanamaz</p>
+         <h3>DNS 4 ADIMDA ÇALIŞIR </h3>
+         <ul><strong style="color: rgb(96, 95, 95);;">Adım 1: </strong> Tarayıcıya bir alan adı yazdığınızda İnternet Servis Sağlayıcına IP adresi sorgusu yapılır. DNS çözümleyici bağlı bulunduğu Root Server’a gider ve alan adının IP adresini sorar.</ul>
+            <ul><strong style="color: rgb(96, 95, 95);;">Adım 2:</strong>Root Server, sorgulanan alan adına ait IP adresini bulabilmek için sizi bağlı bulunduğu uzantıya ait TLD Server’a yönlendirir.  </ul>
+                <ul><strong style="color: rgb(96, 95, 95);;">Adım 3: </strong> : TLD Server, uzantısına göre alan adının barındırıldığı Name Server’ı bulup sizi yetkili Name Server’a yönlendirir.</ul>
+                    <ul><strong style="color: rgb(96, 95, 95);;">Adım 4: </strong>:  Nihai olarak yetkili Name Server bünyesinde barındırdığı alan adının IP adresi bilgisini verir ve tarayıcı bu IP adresi bilgisini kurarak internet sitesinin bağlı bulunduğu sunucuyla doğrudan bağlantı kurmanıza yardımcı olur.  </ul>
+         
+         
+         
+         
+          </section>
+
+          <section class="footerd">
+            <div class="searchd">
+               <input type="textd"
+               class="search-inputd"
+               placeholder="search"> 
+               <button class="btn bnt-primaryd"> search</button>
+            </div>
+            <div class="shared">
+                <a style="color: white;" href="#" class="fab fa-instagram"></a>
+                <a style="color: white;" href="#" class="fab fa-twitter"></a>
+                <a style="color: white;" href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="linksd">
+                <a href="MRSBELEK.html">Ana Sayfa</a>
+                <a href="hakkimda.html">Hakkımda</a>
+                <a href="raporlar.html">Raporlar</a>
+                <a href="contact.html">iletişim</a>
+            </div>
+            <div class="creditd">
+                <span>MRS BELEK</span>
+            </div>
+        </section>
+
+    </body>
+    </html>

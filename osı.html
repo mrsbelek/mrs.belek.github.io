@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raporlar</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="CSS/mrsbelek.css">
+</head>
+<style>
+    .logo img {
+        right: 7rem;
+    }
+</style>
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">
+        <img src="mrsbeloga.jpg" alt="logo"></a>
+        <nav class="navbar">
+            
+            <a href="raporlar.html" class="active">Raporlar</a>
+            
+         </nav>
+         
+         <div class="buttons">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+         </div>
+        </header>
+        <section class="osıo">
+
+        </section>
+
+        <section class="osı">
+            <h2>OSI (OPEN SYSTEMS INTERCONNECTİONS)</h2>
+            <p>OSI referans modelinin ortaya çıkış amacı Network kavramının ortaya çıkmasıyla beraber teknoloji üreten  daha çok bilgisayar donanımı üreten  firmalar tarafından bir çok protokol  geliştirilmiştir fakat geliştirilen protokoller belli bir standarta göre değilde her üretici kendi ürettiği ürüne göre protokol geliştirmiştir bu da zamanla iletişim sorununu ortaya çıkarmıştır bu sorunun çözümü olarak ISO ( International  Organization for standardization ) tarafından donanım ve ağ alt yapısından bağımsız olarak OSI referans modeli 7 katmana ayrılaraktan ortaya konulmuştur. Her bir katmanın görevi bir üst katmana servis sağlamaktır. İki bilgisayar arasındaki iletişimde katmanlar sırasıyla iletişim kurarlar; eş düzeydeki katmanlar aslında doğrudan iletişim kurmazlar ancak aralarında sanal bir iletişim oluşur.
+                Veri alt katmanlara iletilirken iletim şekli şu şekilde olur: Veri (data) halinde alınan bilgi, taşıma katmanında kesim (segment) adı verilen birimlere ayrılır. Bu şekilde veri alıcı makinede tekrar biraraya getirilirken doğru sıralanması sağlanmış olur. Ağ katmanına segment şeklinde gelen verilere burada adres bilgileri eklenir; böylece kesimler paket haline dönüşür. Veri-bağlantı katmanında paketlere MAC adresleri eklenerek çerçeve (frame) adını verdiğimiz yapı oluşur. En son aşama olarak fiziksel katmana gelen çerçeveler burada bir bit dizisine dönüştürülerek iletime hazır hale getirilir. Verinin iletimi üst katmandan alt katmana doğru olur. Verinin kablo ile iletimi fiziksel katman tarafından gerçekleştirilir. Diğer bilgisayarda ise önce fiziksel katman ile karşılanan veri üst katmanlara doğru hareket eder
+                </p>
+                
+                    <ul><strong style="color: rgb(96, 95, 95);;">1. Physical Layer (Fiziksel Katman) : </strong>Donanım katmanı ve ilk katmandır. Bu katmanda, verilerin kablo üzerinden gelen bilgiyi bit olarak (0 ve 1 olarak) iletilmesini sağlanır. Verileri gönderen tarafta 1 ve 0 ‘ı elektrik sinyallerine dönüştürürken, alıcı tarafta kablodan gelen bu sinyalleri tekrar 1 ve 0’a dönüştürür.  Verilerin fiziksel olarak gönderilmesi ve alınmasından sorumludur. Bu katman elektriksel ve mekanik özelliklerle ilgilenir. Fiziksel katmanda veri birimi bit’dir.  </ul>
+                    <ul><strong style="color: rgb(96, 95, 95);;">2. Data Link Layer (Veri Bağı Katmanı) : </strong>Ağ katmanından aldığı veri paketlerini frame (çerçeve) halinde fiziksel katmana iletme işinden sorumludur. İletilen çerçevenin doğru mu yoksa yanlış mı iletildiğini kontrol eder ve çerçeve hatalıysa tekrardan gönderilmesini sağlar. Veri iletim katmanı MAC ve LLC olmak üzere iki alt katmana ayrılmaktadır. Veri iletimi katmanında veri birimi frame’dir. Ethernet, token ring gibi erişim yöntemleri bu katmanda çalışır. Veriyi, erişim yöntemleri kendi protokollerine uygun bir şekilde iletir. Ağ katmandan gelen veriyi fiziksel katmana iletir. Burada veriler bölünerek frameler (çatılar) oluşturur. Frameler, verileri kontrol ederek gönderilmesini sağlar. Bu işlemlerin büyük çoğunluğu ağ kartı üzerinde olur.</ul>
+                
+                <h3>MAC:</h3>
+                <p>Fiziksel katmanla iletişim kurulmasını sağlar. Fiziksel/donanım adresi olarak da isimlendirilir alt katmanı veriyi hata kontrol kodu(CRC), alıcı ve gönderenin MAC adresleri ile beraber paketler ve fiziksel katmana aktarır. Alıcı tarafta da bu işlemleri tersine yapıp veriyi veri bağlantısı içindeki ikinci alt katman olan LLC'ye aktarmak görevi yine MAC alt katmanına aittir. Her bir aygıttın kendisine özel bir MAC adresi vardır.
+                </p>
+                <h3>LCC:</h3>
+                 <p> Alt katmanı bir üst katman olan ağ katmanı için geçiş görevi görür. Mantıksal bir ara birim kullanarak bir üst katmanla iletişimi  bozulmuş paketlerin tekrar gönderilmesi sağlar. Protokole özel mantıksal portlar oluşturur Böylece kaynak makinada ve hedef makinada aynı protokoller iletişime geçebilir. Flow Control, alıcının işleyebileceğinden fazla gelen veriyi kontrol eder engellenmesini sağlar. Akış kontrolünü sağlar.</p>
+                <ul>
+                    Ağlarda bulunan çerçeve tipleri şöyledir:
+                    <li>802.2  Ethernet II</li>
+                    <li>802.3  Ethernet</li>
+                    <li>802.4  Token Bus</li>
+                    <li>802.5  Token Ring</li>
+                </ul>
+                <p>Switch 2.katmanda çalışan bir cihazdır. Çünkü 2. katmanda tanımlı MAC adreslerini algılayabilirler ve bir porttan gelen veri paketini  sadece gerekli olan porta yollayabilirler
+
+                </p>
+                
+                    <ul><strong style="color: rgb(96, 95, 95);;">3. Network Layer (Ağ Katmanı) : </strong>Bu katmanda iletilen veriler paket olarak adlandırılır. Veri paketlerini, onların ağ adreslerini kullanarak uygun ağlara yönlendirme işini yapar. Adresleme işlemlerini yürütür.  veri paketine farklı bir ağa gönderilmesi gerektiğinde yönlendiricilerin kullanacağı bilginin eklendiği katmandır.  Router ve IP protokolü bu katmanda tanımlıdır. Ağ katmanında veri birimi paket’dir. Bu katman sayesinde verinin router aracılığıyla yönlendirilmesi de  sağlanır.</ul>
+                    <ul><strong style="color: rgb(96, 95, 95);;">4. Transport Layer (Taşıma Katmanı) : </strong>Taşıma katmanı üst katmanlardan gelen veriyi ağ paketi boyutunda parçalara böler. Bu katman verinin nasıl iletileceğini belirler. Üst katmandan aldığı verileri segmentlere ayırarak bir alt katmana iletir. Bir üst katmana bu bölümleri birleştirerek sunar. Aynı zamanda verinin uçtan uca iletimini sağlayarak karşı tarafa gönderilen verinin yerine ulaşıp ulaşmadığını kontrol eder. TCP, UDP, SPX protokolleri bu katmanda çalışır. Bu protokoller hata kontrolü gibi görevleri de yerine getirir. Bu katmanda veriler kesim (segment) halinde taşınır. Taşıma katmanında veri birimi segment’dir</ul>
+                    <ul><strong style="color: rgb(96, 95, 95);;">5. Session Layer (Oturum Katmanı) :  </strong>Haberleşecek olan bilgisayarların arasında bağlantı oluşturmasını ve yönetilmesini sağlar. Bu katmanın en önemli işlevi eğer veri iletiminde ve veri güvenliğinde hata oluşmuşsa verinin tekrar gönderilmesini sağlamasıdır. Bu, sunum katmanına yollanacak veriler farklı oturumlarla birbirinden ayrılarak yapılır. NFS, SQL, ASP ve Telnet bu katmanda tanımlıdır. Oturum katmanında veri birimi data’dır. </ul>
+                    <ul><strong style="color: rgb(96, 95, 95);;">6. Presentation Layer (Sunum Katmanı)  </strong>En önemli görevi yollanan verinin karşı bilgisayar tarafından anlaşılacak şekilde çevrilmesidir. Bu sayede farklı programların birbirlerinin verisini kullanabilmesi mümkün olur. Verileri, uygulama katmanına sunarken veri (data) üzerinde kodlama ve dönüştürme işlemlerini yaparak aynı dilin konuşulmasını sağlar. Ayrıca veri sıkıştırma, şifreleme vb. işlemleri de gerçekleştirir. Sunum katmanında veri birimi data’dır. Sunum Katmanın İletişim Kuralları; ASCII, MIDI, EBCDIC, MPEG.</ul>
+                    <ul><strong style="color: rgb(96, 95, 95);;">7. Application Layer (Uygulama Katmanı) : </strong>Kullanıcılar tarafından çalıştırılan tüm uygulamalar bu katmanda tanımlıdır. Kullanıcıya en yakın olan katmandır. Doğrudan kullanıcıdan bilgi alır ve gelen verileri kullanıcıya götürür. Bu katmanda kullanıcıların gereksinimleri karşılanır. Uygulamaların ağ üzerinde çalışmasın sağlar. SSH, telnet, FTP, TFTP, SMTP, SNMP, HTTP, DNS protokolleri ve tarayıcılar bu katmanda çalışır. E-posta ve veritabanı gibi uygulamalar bu katman aracılığıyla yapılır.</ul>
+                
+                
+        </section>
+
+        <section class="footero">
+            <div class="searcho">
+               <input type="texto"
+               class="search-inputo"
+               placeholder="search"> 
+               <button class="btn bnt-primaryo"> search</button>
+            </div>
+            <div class="shareo">
+                <a style="color: white;" href="#" class="fab fa-instagram"></a>
+                <a style="color: white;" href="#" class="fab fa-twitter"></a>
+                <a style="color: white;" href="#" class="fab fa-linkedin"></a>
+            </div>
+            <div class="linkso">
+                <a href="MRSBELEK.html">Ana Sayfa</a>
+                <a href="hakkimda.html">Hakkımda</a>
+                <a href="raporlar.html">Raporlar</a>
+                <a href="contact.html">iletişim</a>
+            </div>
+            <div class="credito">
+                <span>MRS BELEK</span>
+            </div>
+        </section>
+
+    </body>
+    </html>

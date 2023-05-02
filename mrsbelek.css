@@ -1,0 +1,1824 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration:none ;
+    text-transform: capitalize;
+    transition: 0.2 ease;
+} 
+
+body {
+
+    background-color: rgb(8,8,8); 
+ 
+ 
+    height: 200vh;
+}
+
+    section{
+    padding: 3.5rem 7%;
+
+}
+
+:root{
+    --black-color: rgb(8, 8, 8);
+    
+
+}
+
+  /* html{
+     font-size: 62.5%; 
+    overflow: hidden;
+     scroll-padding-top: 9rem; 
+    scroll-behavior: smooth;
+}   */
+
+.logo img {
+    height: 5rem;
+}
+.search-input{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    padding: 0.9px;
+    text-transform: none;
+    border-radius: 40px;
+}
+
+
+
+
+
+.header start
+.header .logo img {
+    
+    height: 10rem;
+}
+.header{
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 50rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75) ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}   
+
+.header .navbar a{
+    margin: 0 3rem;
+     font-size: 1.6rem; 
+    color: rgb(194, 187, 187);
+     border-bottom: 0.1rem solid transparent;
+} 
+
+.header .navbar  a.active,
+.header .navbar  a:hover{
+     background: linear-gradient(80deg, rgba(45,156,219,.6), rgba(155,81,224,.6));
+     border-radius: 2px;
+}
+.header .buttons button{
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 2.5rem;
+    background-color:rgb(194, 187, 187);
+}
+
+/*! header end */
+/*! anasayfa start */
+.anasayfa {
+    min-height: 120vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center; }
+
+
+.anasayfa .content {
+    max-width: 60px;
+}
+.anasayfa .content h3{
+    font-size: 60px;
+    color :rgb(194, 187, 187);
+    margin-top: 45px;
+    margin-left: 100px;
+}
+section{
+    padding: 35px 7%;
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 130px;
+    border-radius: 150px;
+    font-size: 28px;
+    color: rgb(194, 187, 187);
+    background-color: var(--black-color);
+    cursor: pointer;
+
+
+}
+ 
+
+/*! anasayfa end */
+
+.iletişim{
+    color: rgb(194, 187, 187);
+    margin-left: 30px;
+    margin-top: 130px;
+    font-size: 50px;
+}
+
+.iletişim p{
+    color: rgb(194, 187, 187);
+    margin-left: 500px;
+    font-size: 20.8px;
+    margin-top: 50px;
+}
+
+ .card{
+    color: rgb(194, 187, 187);
+    display: inline-block; 
+    font-size: 20px;
+    margin-top: 100;
+    margin-left: 1000px;
+    background-color: rgb(194, 187, 187);
+    cursor: pointer;
+} 
+.iletişim .buttons button{
+    color:rgb(194, 187, 187) ;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 2.5rem;
+}
+
+
+
+.mrs{
+    min-height: 50vh;
+    background: url(../CSS/raporlar1.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+     margin-top: -182px;
+     
+} 
+ .raporlar .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 15px;
+ }
+
+.raporlar .box-container .box{
+    padding: 3rem;
+    background-color: rgb(194, 187, 187);
+    border-radius: 3rem;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+ .raporlar .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+ }
+ .raporlar .box-container .box .raporlar-category{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-left: 120px;
+}
+
+
+ .raporlar .box-container .box h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 36px;
+    margin-top: 80px;
+}
+
+.raporlar .buttons button{
+    margin-left: 80px;
+    margin-top: 300px;
+
+}
+
+
+
+.belek{min-height: 50vh;
+    background: url(../CSS/iletişim1.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+     margin-top: -142px;
+}
+
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+ } 
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+ .title{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-left{
+    width: 40%;
+    padding: 3rem
+}
+.cont-top{
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+}
+
+.cont-element{
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.cont-element i{
+    color: rgb(194, 187, 187);
+    padding: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid rgb(194, 187, 187);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 0.4sn ease;
+}
+.cont-element:hover i{
+    background-color: white;
+    color: rgb(72, 71, 71);
+}
+
+.cont-element a{
+    color: rgb(84, 81, 81);
+    text-decoration: none;
+}
+
+.cont-bottom{
+    color: rgb(194, 187, 187);
+    padding: 0.1rem;
+    border-radius: 10%;
+    border: 2px solid rgb(194, 187, 187);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 0.4sn ease;
+   
+}
+
+.cont-bottom a{
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(222, 207, 207);
+    border-radius: 50%;
+}
+.cont-bottom a:hover{
+    color: rgb(255, 243, 243) ;
+    background-color: white;
+}
+.cont-right{
+    width: 100%;
+    padding: 3rem;
+}
+
+.cont-right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-right form input, textarea, button{
+    
+    width: 100%;
+    margin: 1rem 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+}
+.cont-right form button:hover{
+    background-color: white;
+    color: black ;
+}
+.cont-right input:hover, textarea:hover{
+    color: white;
+    background-color:rgb(8, 8, 8);
+}
+
+.fon div img{
+    
+        min-height: 120vh;
+        background: url(../CSS/bbb.jpg)
+        no-repeat;
+        background-size: cover;
+         background-position: center;  
+        margin-top: -14.5rem;
+        display: flex; 
+        align-items: center; 
+    
+}
+
+.fon .content {
+    max-width: 50px;
+}
+.fon p{
+    font-size: 20px;
+    margin: -100px;
+    margin-left: 200px;
+    margin-right: -150;
+    
+}
+
+section{
+    padding: 35px 7%;
+}
+
+.btn{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 130px;
+    border-radius: 150px;
+    font-size: 28px;
+    color: rgb(194, 187, 187);
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+.fon{
+    min-height: 50vh;
+    background: url(../CSS/hakkımda1.jpg)
+    ;
+    background-size: cover;
+     background-position: center;  
+     margin-top: -142px;
+     color: rgb(194, 187, 187);
+   
+}
+ .hakkimda p {
+        color: rgb(194, 187, 187);
+        margin-left: 60%;
+        font-size: 20px; 
+        margin-top: -120px;
+         } 
+
+         .hakkimda h3 {
+            color: rgb(194, 187, 187);
+            font-size: 45px;
+            margin-top: 60px;
+    
+    margin-left: 70px;
+    margin-right: 700px;
+         }
+
+         
+            
+    /*  .lo{background: url(../HTML/mrsbeloga.jpg)
+    ;
+    background-size: cover;
+     background-position: center;  
+     margin-top: -4px;
+     color: rgb(194, 187, 187);
+     margin-left: -400px;
+         }
+         .loo{
+            
+            background: url(../HTML/mrsbeloga.jpg)
+            ;
+            background-size: cover;
+             background-position: center;  
+             margin-top: -737px;
+             color: rgb(194, 187, 187);
+             margin-left: 500px;
+                 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .fon{
+    color: rgb(194, 187, 187);
+    margin-top: 60px;
+    
+    margin-left: 70px;
+    margin-right: 700px;
+   
+    font-size: 45px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+
+html{
+    font-size: 55%;
+}
+ .header {
+    padding: 1.5rem 2rem;
+ }
+.header .logo img {
+    height: 7rem;
+}
+
+section{
+    padding: 2rem;
+}
+
+}
+
+
+.gps{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.gpso p{
+    font-size: 18px;
+    color: rgb(234, 234, 234);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.gpso h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.gpso h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+   
+   
+    
+}
+
+.gpso{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* EN ALT */
+.footer{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 150px;
+    }
+
+.footer .search{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer .search .searc-input{
+    width: 700px;
+    
+}
+
+
+.footer.search .btn-primary{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footer .share{
+    padding: 40px 0;
+
+}
+
+.footer .share s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footer.share a:hover{
+    background-color: black;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer .links a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footer .links a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footer .credit{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footer.credit span{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+
+
+.footero{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 1200px;
+    }
+
+.footero .searcho{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footero .searcho .searc-inputo{
+    width: 700px;
+    
+}
+
+
+.footero .searcho .btn-primaryo{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footero .shareo{
+    padding: 40px 0;
+
+}
+
+.footero .shareo s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: rgb(250, 247, 247);
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footero .shareo a:hover{
+    background-color: black;
+}
+
+.footero .linkso{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footero .linkso a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footero .linkso a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footero .credito{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footero .credito span{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+
+
+
+.footerg{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 1500px;
+    }
+
+.footerg .searchg{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerg .searchg .searc-inputg{
+    width: 700px;
+    
+}
+
+
+.footerg.searchg .btn-primaryg{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footerg .shareg{
+    padding: 40px 0;
+
+}
+
+.footerg .shareg s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footerg.shareg a:hover{
+    background-color: black;
+}
+
+.footerg .linksg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footerg .linksg a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footerg .linksg a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footerg .creditg{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footerg.creditg spang{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+
+
+.footerd{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 1200px;
+    }
+
+.footerd .searchd{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerd .searchd .searc-inputd{
+    width: 700px;
+    
+}
+
+
+.footerd.searchd .btn-primaryd{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footerd .shared{
+    padding: 40px 0;
+
+}
+
+.footerd .shared s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footerd.shared a:hover{
+    background-color: black;
+}
+
+.footerd .linksd{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footerd .linksd a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footerd .linksd a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footerd .creditd{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footerd.creditd span{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+
+.footerh{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 650px;
+    }
+
+.footerh .searchh{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerh .searchh .searc-inputh{
+    width: 700px;
+    
+}
+
+
+.footerh.searchh .btn-primaryh{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footerh .shareh{
+    padding: 40px 0;
+
+}
+
+.footerh .shareh s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footerh.shareh a:hover{
+    background-color: black;
+}
+
+.footerh .linksh{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footerh .linksh a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footerh .linksh a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footerh .credith{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footerh.credith span{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+.footerm{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 1300px;
+    }
+
+.footerm .searchm{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerm .searchm .searc-inputm{
+    width: 700px;
+    
+}
+
+
+.footerm.searchm .btn-primarym{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footerm .sharem{
+    padding: 40px 0;
+
+}
+
+.footerm .sharem s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footerm.sharem a:hover{
+    background-color: black;
+}
+
+.footerm .linksm{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footerm .linksm a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footerm .linksm a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footerm .creditm{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footerm.creditm span{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+
+.footere{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 650px;
+    }
+
+.footere .searche{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footere .searche .searc-inpute{
+    width: 700px;
+    
+}
+
+
+.footere.searche .btn-primarye{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footere .sharee{
+    padding: 40px 0;
+
+}
+
+.footere .sharee s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footere.sharee a:hover{
+    background-color: black;
+}
+
+.footere .linkse{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footere .linkse a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footere .linkse a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footere .credite{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footere.credite span{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+
+.footerr{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    padding-top: 500px;
+    }
+
+.footerr .searchr{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footerr .searchr .searc-inputr{
+    width: 700px;
+    
+}
+
+
+.footerr.searchr .btn-primaryr{
+    background-color:black;
+    padding: 10px 20px;
+    margin-left: 10px;
+       
+}
+.footerr .sharer{
+    padding: 40px 0;
+
+}
+
+.footerr .sharer s{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    border:rgb(194, 187, 187);
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.footerr.sharer a:hover{
+    background-color: black;
+}
+
+.footerr .linksr{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footerr .linksr a {
+    background-color:rgb(8, 12, 12);
+    padding: 7px 20px;
+    color: rgb(194, 187, 187);
+    font-size: 20px;
+    margin-left: 70px;
+    
+    
+    
+    
+
+}
+
+.footerr .linksr a:hover {
+    background-color: black;
+    opacity: 0.7;
+}
+
+
+
+
+.footerr .creditr{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 300;
+    padding-top: 15px;
+}
+.footerr.creditr span{
+    font-size: 20px;
+    color: rgb(194, 187, 187);
+    font-weight: 250;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.osıo{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.osı p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.osı h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.osı h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+   }
+
+.osı{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+.osı ul li{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+.osı ul{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+} 
+
+
+.dnsd{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.dns p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.dns h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.dns h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+   }
+
+.dns{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+.dns ul li{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+.dns ul{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+
+
+.honeypott{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.honeypot p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.honeypot h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.honeypot h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+   }
+
+.honeypot{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+.honeypot ul li{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+.honeypot ul{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+.honeypot li{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+
+}
+
+
+
+.mem{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.me p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.me h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.me h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+   }
+
+.me{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+.me ul li{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+.me ul{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+.me li{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+
+}
+
+.rwr{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+    
+}
+.rw{ background-color: rgb(4, 4, 4);
+    height: 30px;
+
+}
+
+.rw h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+
+}
+
+.rw p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+
+}
+
+
+.ddd{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.dd p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.dd h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.dd h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+   }
+
+.dd{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+.dd ul li{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+}
+.dd ul{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+} 
+
+
+.empatii{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.empati p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.empati h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.empati h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+   }
+
+.empati{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+
+
+.se{
+    min-height: 100vh;
+    background: url(../CSS/arkaplanbelek.jpg)
+    no-repeat;
+    background-size: cover;
+     background-position: center;  
+    margin-top: -14.5rem;
+    display: flex; 
+    align-items: center;
+} 
+
+
+.seo p{
+    font-size: 18px;
+    color: rgb(218, 216, 216);
+    font-family: 'Times New Roman';
+    
+    
+
+}
+.seo h2{
+    margin-left: 500px;
+    margin-right: 500px;
+    color: rgb(96, 95, 95);
+    text-transform: uppercase;
+    
+}
+.seo h3{
+    color: rgb(96, 95, 95) ;
+
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+   }
+
+.seo{
+    background-color: rgb(4, 4, 4);
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANASAYFA RAPORLAR */
+
+.raporlarr .box-containerr{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 15px;
+ }
+
+.raporlarr .box-containerr .boxr{
+    padding: 3rem;
+    background-color: rgb(194, 187, 187);
+    border-radius: 3rem;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+ .raporlarr .box-containerr .boxr img{
+    width: 100%;
+    object-fit: cover;
+ }
+ .raporlarr .box-containerr .boxr .raporlar-categoryr{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-left: 120px;
+}
+
+
+ .raporlarr .box-containerr .boxr h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-left: 36px;
+    margin-top: 80px;
+    background-size: cover;
+    background-position: center;  
+   
+}
+
+.raporlarr .buttons button{
+    margin-left: 350px;
+    margin-top: 350px;
+margin-right: 200px;
+}
+.btnr{
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 100px;
+    border-radius: 150px;
+    font-size: 28px;
+    color: rgb(194, 187, 187);
+    background-color: var(--black-color);
+    cursor: pointer;
+
+
+}
+
+
